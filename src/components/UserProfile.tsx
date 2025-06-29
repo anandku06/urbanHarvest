@@ -7,7 +7,7 @@ import {
   Trophy,
   Star,
 } from "lucide-react";
-import { User as UserType } from "../types";
+import type { User as UserType } from "../types";
 import { availableBadges } from "../data/mockData";
 import { formatDistanceToNow } from "date-fns/formatDistanceToNow";
 

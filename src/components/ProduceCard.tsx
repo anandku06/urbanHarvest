@@ -1,6 +1,6 @@
 import React from 'react';
 import { MapPin, Calendar, Tag, Heart, MessageCircle } from 'lucide-react';
-import { Produce } from '../types';
+import type { Produce } from '../types';
 import { formatDistanceToNow } from 'date-fns/formatDistanceToNow';
 
 interface ProduceCardProps {

@@ -1,6 +1,6 @@
 import React from 'react';
 import { MapPin, Navigation } from 'lucide-react';
-import { Produce } from '../types';
+import type { Produce } from '../types';
 
 interface SimpleMapProps {
   produce: Produce[];

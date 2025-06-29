@@ -4,7 +4,7 @@ import { ProduceCard } from './ProduceCard';
 import { SimpleMap } from './SimpleMap';
 import { UserProfile } from './UserProfile';
 import { GardeningTips } from './GardeningTips';
-import { Produce, User } from '../types';
+import type { Produce, User } from '../types';
 import { mockProduce } from '../data/mockData';
 
 interface DashboardProps {

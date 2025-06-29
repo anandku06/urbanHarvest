@@ -1,16 +1,17 @@
-import React, { useState } from 'react';
-import { Header } from './components/Header';
-import { Hero } from './components/Hero';
-import { Features } from './components/Features';
-import { AuthModal } from './components/AuthModal';
-import { Dashboard } from './components/Dashboard';
-import { Footer } from './components/Footer';
-import { useAuth } from './hooks/useAuth';
+import { useState } from "react";
+import { Header } from "./components/Header";
+import { Hero } from "./components/Hero";
+import { Features } from "./components/Features";
+import { AuthModal } from "./components/AuthModel";
+import { Dashboard } from "./components/Dashboard";
+import { Footer } from "./components/Footer";
+import { useAuth } from "./hooks/useAuth";
 
 function App() {
-  const { user, isAuthenticated, login, register, logout, isLoading } = useAuth();
+  const { user, isAuthenticated, login, register, logout, isLoading } =
+    useAuth();
   const [showAuthModal, setShowAuthModal] = useState(false);
-  const [searchQuery, setSearchQuery] = useState('');
+  const [searchQuery, setSearchQuery] = useState("");
 
   const handleGetStarted = () => {
     if (isAuthenticated) {
@@ -25,7 +26,12 @@ function App() {
     setShowAuthModal(false);
   };
 
-  const handleRegister = (name: string, email: string, password: string, location: string) => {
+  const handleRegister = (
+    name: string,
+    email: string,
+    password: string,
+    location: string
+  ) => {
     register(name, email, password, location);
     setShowAuthModal(false);
   };
